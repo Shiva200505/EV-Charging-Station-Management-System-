@@ -1,6 +1,6 @@
 # EV Charging Station Management System
 
-![VoltCharge Logo](./images/voltcharge-logo.png)
+![image](https://github.com/user-attachments/assets/f2026ff0-1e8b-408b-be8b-4b3e4088ebe5)
 
 ## Project Overview
 
@@ -9,20 +9,17 @@ The EV Charging Station Management System is a full-stack application designed t
 ## Application Screenshots
 
 ### Charging Stations Listing
-![Charging Stations](./images/charging-stations.png)
-*Browse available charging stations with details like location, charging type, power output, price, and slot availability*
+![Screenshot 2025-04-10 103148](https://github.com/user-attachments/assets/4891f0ed-0b4c-4255-9a91-fdf77f1b9296)
+
 
 ### Booking Interface
-![Booking Interface](./images/booking-interface.png)
+![Screenshot 2025-04-10 103203](https://github.com/user-attachments/assets/81ea1d5f-4a24-48c5-8c1a-091f3838976b)
 *Book charging slots by selecting station, vehicle type, date/time, and duration*
 
 ### Payment Processing
-![Payment Processing](./images/payment-processing.png)
+![Screenshot 2025-04-10 103259](https://github.com/user-attachments/assets/48774f10-2140-4e3e-b7e4-6c351c41281d)
 *Secure payment system with booking summary and payment method selection*
 
-### Error Handling
-![Error Handling](./images/error-handling.png)
-*Robust error handling with user-friendly messages and retry options*
 
 ## Features
 
