@@ -1,0 +1,83 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Centering the Auth Container */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+}
+
+/* Auth Form Styling */
+.auth-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px; /* Increased width for better spacing */
+}
+
+.auth-form h2 {
+  margin-bottom: 40px; /* Adds space below the heading */
+}
+
+/* Input Fields */
+.auth-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0; /* Increased spacing between inputs */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Button Styling */
+.auth-form .btn {
+  width: 100%;
+  padding: 12px;
+  background: #6e8efb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px; /* Adds space above button */
+}
+
+.auth-form .btn:hover {
+  background: #5a7cf0;
+}
+
+/* Register and Forgot Password Links */
+.auth-form p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.auth-form a {
+  color: #6e8efb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-form a:hover {
+  text-decoration: underline;
+}
+
+/* Terms and Conditions Section */
+.terms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Space between checkbox and text */
+  margin-top: 10px;
+}

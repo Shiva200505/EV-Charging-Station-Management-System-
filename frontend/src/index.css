@@ -1,0 +1,1240 @@
+/* Login Page */
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Centering the Login Container */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff); /* Light EV-Inspired Background */
+  padding: 20px;
+}
+
+/* Enlarged Login Form */
+.auth-form {
+  background: #ffffff; /* Clean White Card */
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 150, 136, 0.3); /* Soft Green Glow */
+  text-align: center;
+  width: 500px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #00bfa5; /* Bright Teal EV Theme */
+}
+
+.auth-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 15px 35px rgba(0, 150, 136, 0.4);
+}
+
+/* Title */
+.auth-form h2 {
+  margin-bottom: 1.5rem;
+  color: #00796b; /* Deep Green for EV theme */
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* Input Field Styling */
+.auth-form input {
+  width: 100%;
+  padding: 15px;
+  margin: 12px 0;
+  border: 2px solid #80cbc4;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: 0.3s;
+  outline: none;
+  background: #f1fdfb; /* Light background for inputs */
+  color: #004d40;
+}
+
+.auth-form input:focus {
+  border-color: #00bfa5;
+  box-shadow: 0px 0px 12px rgba(0, 191, 165, 0.5);
+}
+
+/* Button Styling */
+.auth-form .btn {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(90deg, #00bfa5, #4db6ac); /* Bright EV green-blue */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.auth-form .btn:hover {
+  background: linear-gradient(90deg, #4db6ac, #00bfa5);
+  transform: scale(1.05);
+}
+
+/* Forgot Password Link */
+.auth-form .forgot-password {
+  display: block;
+  margin: 10px 0;
+  font-size: 16px;
+  color: #00796b;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.auth-form .forgot-password:hover {
+  color: #004d40;
+  text-decoration: underline;
+}
+
+/* Register Link */
+.auth-form p {
+  margin-top: 16px;
+  font-size: 17px;
+  color: #004d40; /* Dark Green for readability */
+}
+
+.auth-form a {
+  color: #009688; /* Teal */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.auth-form a:hover {
+  text-decoration: underline;
+  color: #00796b;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .auth-form {
+    width: 100%;
+    padding: 2rem;
+    border-radius: 15px;
+  }
+
+  .auth-form input {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .auth-form .btn {
+    font-size: 18px;
+    padding: 14px;
+  }
+}
+
+
+/* Registration Page */
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Centering the Registration Container */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff); /* Light EV-Inspired Background */
+  padding: 20px;
+}
+
+/* Enlarged Register Form */
+.auth-form {
+  background: #ffffff; /* Clean White Card */
+  padding: 3.5rem;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 150, 136, 0.3); /* Soft Green Glow */
+  text-align: center;
+  width: 600px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #00bfa5; /* Bright Teal EV Theme */
+}
+
+.auth-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 15px 35px rgba(0, 150, 136, 0.4);
+}
+
+/* Title */
+.auth-form h2 {
+  margin-bottom: 1.5rem;
+  color: #00796b; /* Deep Green for EV theme */
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* Input Field Styling */
+.auth-form input {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 2px solid #80cbc4;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: 0.3s;
+  outline: none;
+  background: #f1fdfb; /* Light background for inputs */
+  color: #004d40;
+}
+
+.auth-form input:focus {
+  border-color: #00bfa5;
+  box-shadow: 0px 0px 12px rgba(0, 191, 165, 0.5);
+}
+
+/* Terms & Conditions */
+.terms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  font-size: 16px;
+  color: #004d40;
+}
+
+.terms input {
+  width: auto;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+/* Button Styling */
+.auth-form .btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #00bfa5, #4db6ac); /* Bright EV green-blue */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.auth-form .btn:hover {
+  background: linear-gradient(90deg, #4db6ac, #00bfa5);
+  transform: scale(1.08);
+}
+
+/* Login Link */
+.auth-form p {
+  margin-top: 14px;
+  font-size: 16px;
+  color: #004d40; /* Dark Green for readability */
+}
+
+.auth-form a {
+  color: #009688; /* Teal */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.auth-form a:hover {
+  text-decoration: underline;
+  color: #00796b;
+}
+.link {
+  color: #009688;
+  cursor: pointer;
+  font-weight: 600;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Charging Page */
+/* General Page Styling */
+.charging-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  padding: 40px 20px;
+}
+
+/* Page Title */
+.page-title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  color: #00796b;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Charging Station Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Increased min-width */
+  gap: 24px;
+  width: 100%;
+  max-width: 1400px; /* Increased max-width for broader layout */
+}
+
+/* Station Card */
+.station-card {
+  background: #ffffff;
+  padding: 32px; /* Increased padding for a broader look */
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 150, 136, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #00bfa5;
+  width: 100%; /* Ensures card takes full available width */
+  max-width: 500px; /* Increased max-width for broad appearance */
+}
+
+.station-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 15px 35px rgba(0, 150, 136, 0.4);
+}
+
+/* Station Title */
+.station-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #00796b;
+  margin-bottom: 8px;
+}
+
+/* Location */
+.station-location {
+  font-size: 16px;
+  color: #004d40;
+}
+
+/* Status Badge */
+.status-badge {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-transform: uppercase;
+  margin-top: 12px;
+}
+
+.status-badge.available {
+  background: #00e676;
+  color: #004d40;
+}
+
+.status-badge.in {
+  background: #ff9800;
+  color: #fff;
+}
+
+.status-badge.maintenance {
+  background: #d32f2f;
+  color: #fff;
+}
+
+/* Book Slot Button */
+.book-button {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(90deg, #00bfa5, #4db6ac);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 16px;
+  text-transform: uppercase;
+}
+
+.book-button:hover {
+  background: linear-gradient(90deg, #4db6ac, #00bfa5);
+  transform: scale(1.05);
+  box-shadow: 0px 0px 12px rgba(0, 191, 165, 0.5);
+}
+
+/* ==================== Dashboard Page ==================== */
+.dashboard-container {
+  width: 85%;
+  max-width: 1000px;
+  margin: 80px auto 50px auto; /* Adjusted margin for navbar spacing */
+  padding: 3rem;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 150, 136, 0.3);
+  text-align: center;
+  border: 2px solid #00bfa5;
+  transition: all 0.3s ease-in-out;
+}
+
+.dashboard-container:hover {
+  box-shadow: 0px 12px 35px rgba(0, 150, 136, 0.5);
+}
+
+.dashboard-container h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #00796b;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.dashboard-section {
+  margin-bottom: 25px;
+  padding: 25px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #f1fdfb, #e0f2f1);
+  border: 2px solid #80cbc4;
+  box-shadow: 0px 6px 18px rgba(0, 191, 165, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.dashboard-section:hover {
+  box-shadow: 0px 8px 20px rgba(0, 191, 165, 0.5);
+  transform: translateY(-5px);
+}
+
+.dashboard-section h3 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #004d40;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+
+.dashboard-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dashboard-section li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 2px solid #00bfa5;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.status {
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.status.completed {
+  color: white;
+  background: #4caf50;
+  box-shadow: 0px 4px 10px rgba(76, 175, 80, 0.5);
+}
+
+.status.cancelled {
+  color: white;
+  background: #d32f2f;
+  box-shadow: 0px 4px 10px rgba(211, 47, 47, 0.5);
+}
+
+.payment-method {
+  font-weight: 600;
+  color: #00796b;
+  background: rgba(0, 121, 107, 0.1);
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+/* ==================== Responsive Design ==================== */
+@media (max-width: 768px) {
+  .dashboard-container {
+    width: 90%;
+    padding: 2.5rem;
+  }
+
+  .dashboard-section {
+    padding: 20px;
+  }
+
+  .dashboard-container h2 {
+    font-size: 30px;
+  }
+
+  .dashboard-section h3 {
+    font-size: 22px;
+  }
+
+  .dashboard-section li {
+    font-size: 18px;
+  }
+}
+
+/* Navbar and Footer */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ==================== Navbar Styles ==================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px; /* Increased Padding */
+  background: linear-gradient(135deg, #00796b, #00bfa5);
+  color: white;
+  box-shadow: 0px 8px 20px rgba(0, 150, 136, 0.5);
+  width: 100%;
+  position: fixed; /* Sticky Navbar */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #f1fdfb;
+  transform: scale(1.05);
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    padding: 12px;
+    display: block;
+  }
+}
+
+/* ==================== Footer Styles ==================== */
+.footer {
+  width: 100%;
+  padding: 25px 0;
+  background: linear-gradient(135deg, #00bfa5, #00796b);
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 50px;
+  box-shadow: 0px -5px 15px rgba(0, 150, 136, 0.5);
+}
+
+.footer p {
+  margin: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.footer p:hover {
+  color: #f1fdfb;
+  transform: scale(1.05);
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer {
+    font-size: 16px;
+    padding: 20px 0;
+  }
+}
+
+/* ==================== General Styling ==================== */
+body {
+  background: #f4fdfd;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ==================== Charging Station Page ==================== */
+.charging-station-container {
+  width: 98%;
+  max-width: 1600px;
+  margin: 120px auto 80px;
+  padding: 3rem;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 150, 136, 0.3);
+  text-align: center;
+  border: 2px solid #00bfa5;
+  position: relative;
+  z-index: 1;
+}
+
+.charging-station-container h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #00796b;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ==================== Search Bar ==================== */
+.search-bar {
+  width: 95%;
+  max-width: 1000px;
+  padding: 16px;
+  font-size: 20px;
+  border: 2px solid #00bfa5;
+  border-radius: 15px;
+  outline: none;
+  margin-bottom: 30px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 12px rgba(0, 191, 165, 0.2);
+}
+
+.search-bar:focus {
+  border-color: #00796b;
+  box-shadow: 0px 4px 15px rgba(0, 191, 165, 0.4);
+}
+
+/* ==================== Station List ==================== */
+.station-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  width: 100%;
+}
+
+/* ==================== Station Cards ==================== */
+.station-card {
+  background: linear-gradient(135deg, #f1fdfb, #d9f8f3);
+  border: 2px solid #80cbc4;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 18px rgba(0, 191, 165, 0.3);
+  width: 400px;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
+  cursor: pointer;
+  text-align: left;
+}
+
+.station-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0px 10px 25px rgba(0, 191, 165, 0.5);
+}
+
+.station-card h3 {
+  font-size: 24px;
+  color: #00796b;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.station-card p {
+  font-size: 18px;
+  margin: 8px 0;
+  color: #333;
+}
+
+/* ==================== Status Badges ==================== */
+.status {
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.status.active {
+  color: white;
+  background: #4caf50;
+  box-shadow: 0px 4px 10px rgba(76, 175, 80, 0.5);
+}
+
+.status.maintenance {
+  color: white;
+  background: #ff9800;
+  box-shadow: 0px 4px 10px rgba(255, 152, 0, 0.5);
+}
+
+.status.closed {
+  color: white;
+  background: #d32f2f;
+  box-shadow: 0px 4px 10px rgba(211, 47, 47, 0.5);
+}
+
+/* ==================== No Results Message ==================== */
+.no-results {
+  font-size: 22px;
+  font-weight: 600;
+  color: #d32f2f;
+  margin-top: 20px;
+}
+
+/* ==================== Navbar and Footer Adjustments ==================== */
+.navbar {
+  width: 100%;
+  background: #00796b;
+  color: white;
+  padding: 18px 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0px 5px 15px rgba(0, 150, 136, 0.3);
+}
+
+.footer {
+  width: 100%;
+  background: #004d40;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0px -5px 15px rgba(0, 77, 64, 0.3);
+}
+
+/* ==================== Responsive Design ==================== */
+@media (max-width: 1200px) {
+  .charging-station-container {
+    width: 98%;
+    padding: 2.5rem;
+  }
+
+  .station-card {
+    width: 48%;
+  }
+
+  .search-bar {
+    width: 96%;
+  }
+}
+
+@media (max-width: 768px) {
+  .charging-station-container {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .station-card {
+    width: 100%;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .charging-station-container h2 {
+    font-size: 30px;
+  }
+
+  .station-card {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+/* ==================== General Styles ==================== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #f1f8e9); /* Subtle EV theme */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* ==================== Booking Section ==================== */
+.booking-container {
+  width: 90%;
+  max-width: 1100px;
+  padding: 40px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 150, 136, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  margin-top: 100px; /* To prevent overlap with navbar */
+  margin-bottom: 80px; /* Space for footer */
+}
+
+.booking-container:hover {
+  transform: translateY(-5px);
+}
+
+.booking-container h2 {
+  color: #004d40;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0, 77, 64, 0.2);
+  text-transform: uppercase;
+}
+
+/* ==================== Form Styling ==================== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+}
+
+label {
+  font-weight: 600;
+  color: #00796b;
+  text-align: left;
+  font-size: 18px;
+}
+
+select, input {
+  padding: 14px;
+  font-size: 18px;
+  border: 2px solid #26a69a;
+  border-radius: 12px;
+  background: #f1f8e9;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+select:focus, input:focus {
+  border-color: #004d40;
+  box-shadow: 0px 4px 12px rgba(38, 166, 154, 0.3);
+}
+
+/* ==================== Button Styling ==================== */
+button {
+  padding: 16px;
+  font-size: 20px;
+  color: white;
+  background: linear-gradient(135deg, #26a69a, #00796b);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #00796b, #004d40);
+  box-shadow: 0px 8px 20px rgba(0, 77, 64, 0.3);
+}
+
+/* ==================== Navbar and Footer Adjustments ==================== */
+.navbar {
+  width: 100%;
+  background: #00796b;
+  color: white;
+  padding: 18px 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0px 5px 15px rgba(0, 150, 136, 0.3);
+}
+
+.footer {
+  width: 100%;
+  background: #004d40;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0px -5px 15px rgba(0, 77, 64, 0.3);
+}
+
+/* ==================== Responsive Design ==================== */
+@media (max-width: 900px) {
+  .booking-container {
+    width: 95%;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .booking-container {
+    width: 100%;
+    padding: 25px;
+    border-radius: 0; /* Full screen effect */
+  }
+
+  form {
+    width: 90%;
+  }
+}
+
+/* ==================== Payment Page ==================== */
+/* ==================== Navbar and Footer ==================== */
+.navbar {
+  width: 100%;
+  background: #00796b;
+  color: white;
+  padding: 18px 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0px 5px 15px rgba(0, 150, 136, 0.3);
+}
+
+.footer {
+  width: 100%;
+  background: #004d40;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 18px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0px -5px 15px rgba(0, 77, 64, 0.3);
+}
+
+/* ==================== Payment Form ==================== */
+.payment-container {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.payment-form-container {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 150, 136, 0.3);
+}
+
+.payment-form h2 {
+  color: #00796b;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.payment-form input,
+.payment-form select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #00bfa5;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.payment-form input:focus,
+.payment-form select:focus {
+  border-color: #00796b;
+  box-shadow: 0px 4px 12px rgba(0, 191, 165, 0.3);
+}
+
+.payment-form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  color: white;
+  background: #00796b;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.payment-form button:hover {
+  background: #005f56;
+}
+
+/* ==================== Payment History ==================== */
+.payment-history {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 150, 136, 0.3);
+  margin-top: 30px;
+}
+
+.payment-history h3 {
+  color: #00796b;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background: #00796b;
+  color: white;
+}
+
+.status-success {
+  color: green;
+  font-weight: bold;
+}
+
+.status-failed {
+  color: red;
+  font-weight: bold;
+}
+
+.status-pending {
+  color: orange;
+  font-weight: bold;
+}
+
+/* ==================== Responsive Design ==================== */
+@media (max-width: 768px) {
+  .payment-form-container, .payment-history {
+    width: 90%;
+  }
+}
+
+/* ==================== Feedback Page ==================== */
+/* ==================== Navbar and Footer ==================== */
+.navbar {
+  width: 100%;
+  background: #00796b;
+  color: white;
+  padding: 18px 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0px 5px 15px rgba(0, 150, 136, 0.3);
+}
+
+.footer {
+  width: 100%;
+  background: #004d40;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 18px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0px -5px 15px rgba(0, 77, 64, 0.3);
+}
+
+/* ==================== Feedback Form ==================== */
+.feedback-container {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.feedback-form-container {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 150, 136, 0.3);
+}
+
+.feedback-form h2 {
+  color: #00796b;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #00bfa5;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.feedback-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border-color: #00796b;
+  box-shadow: 0px 4px 12px rgba(0, 191, 165, 0.3);
+}
+
+.feedback-form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  color: white;
+  background: #00796b;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.feedback-form button:hover {
+  background: #005f56;
+}
+
+/* ==================== Feedback History ==================== */
+.feedback-history {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 150, 136, 0.3);
+  margin-top: 30px;
+}
+
+.feedback-history h3 {
+  color: #00796b;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background: #00796b;
+  color: white;
+}
+
+.rating-5 {
+  color: green;
+  font-weight: bold;
+}
+
+.rating-4 {
+  color: #4caf50;
+}
+
+.rating-3 {
+  color: orange;
+}
+
+.rating-2 {
+  color: #ff9800;
+}
+
+.rating-1 {
+  color: red;
+}
+
+/* ==================== Responsive Design ==================== */
+@media (max-width: 768px) {
+  .feedback-form-container, .feedback-history {
+    width: 90%;
+  }
+}

@@ -1,0 +1,36 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Global styles */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container layout */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Button styles */
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}

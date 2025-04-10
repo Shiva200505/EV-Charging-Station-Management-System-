@@ -1,0 +1,245 @@
+.charging-stations-container {
+  max-width: 1200px;
+  margin: 100px auto 40px;
+  padding: 0 2rem;
+  min-height: calc(100vh - 160px); /* Account for navbar and footer height */
+}
+
+.charging-stations-container h1 {
+  text-align: center;
+  color: #2F4F4F;
+  font-size: 2.2rem;
+  margin: 1.5rem 0 2.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.search-container {
+  max-width: 900px;
+  margin: 2rem auto 3rem;
+  position: relative;
+  padding: 0 1rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 18px 30px;
+  border: 2.5px solid #4F7942;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  background-color: rgba(79, 121, 66, 0.05);
+  color: #2F4F4F;
+  transition: all 0.3s ease;
+}
+
+.search-input::placeholder {
+  color: #4F7942;
+  opacity: 0.7;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #4F7942;
+  box-shadow: 0 0 0 4px rgba(79, 121, 66, 0.15);
+  background-color: rgba(79, 121, 66, 0.08);
+  transform: translateY(-2px);
+}
+
+.stations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.station-card {
+  background: #e8f5f5;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 128, 128, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.station-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+.station-card h2 {
+  color: #2F4F4F;
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.station-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.station-info p {
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+  color: #2F4F4F;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.label {
+  color: #2F4F4F;
+  font-weight: 500;
+  width: 140px;
+  display: inline-block;
+  opacity: 0.85;
+}
+
+.value {
+  font-weight: 500;
+  color: #2F4F4F;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  width: fit-content;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+
+.status-badge.active {
+  background-color: #90EE90;
+  color: #006400;
+}
+
+.status-badge.maintenance {
+  background-color: #FFB347;
+  color: #8B4513;
+}
+
+.station-actions {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.station-actions button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background-color: #4F7942;
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.station-actions button:hover:not(:disabled) {
+  background-color: #3c5a32;
+  transform: translateY(-2px);
+}
+
+.station-actions button.disabled {
+  background-color: #a0aec0;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 160px);
+  gap: 1rem;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgba(79, 121, 66, 0.1);
+  border-top: 4px solid #4F7942;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.loading-container p {
+  color: #2F4F4F;
+  font-size: 1.1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error-container {
+  text-align: center;
+  padding: 2rem;
+  min-height: calc(100vh - 160px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.error-message {
+  color: #dc2626;
+  font-size: 1.1rem;
+}
+
+.error-container button {
+  padding: 0.75rem 2rem;
+  background-color: #4F7942;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.error-container button:hover {
+  background-color: #3c5a32;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1200px) {
+  .stations-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .stations-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .search-container {
+    margin: 1rem auto 2rem;
+  }
+
+  .search-input {
+    padding: 15px 25px;
+    font-size: 1.1rem;
+  }
+} 
