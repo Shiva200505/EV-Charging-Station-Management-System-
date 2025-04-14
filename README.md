@@ -79,7 +79,7 @@ ev-charging-system/
 
 1. Clone the repository
    ```
-   git clone https://github.com/yourusername/ev-charging-system.git
+   git clone [https://github.com/yourusername/ev-charging-system.git](https://github.com/Shiva200505/EV-Charging-Station-Management-System-.git)
    cd ev-charging-system
    ```
 
@@ -182,4 +182,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-For any queries, please reach out to [your-email@example.com](mailto:your-email@example.com) 
+For any queries, please reach out to shivam.sawant23@vit.edu (mailto:your-email@example.com) 
